@@ -1,5 +1,10 @@
 <?php
 
+// Requirement Files Requiring
+if ( file_exists( dirname( __FILE__ ) . '/inc/enqueue.php' ) ) {
+    require_once dirname( __FILE__ ) . '/inc/enqueue.php';
+}
+
 function avo_theme_functionality()
 {
     // Add Theme Support

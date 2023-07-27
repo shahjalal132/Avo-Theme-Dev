@@ -11,29 +11,6 @@
     <meta name="description" content="Avo - Onepage Multi-Purpose HTML5 Template" />
     <meta name="author" content="" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" />
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&amp;display=swap"
-        rel="stylesheet">
-
-    <!-- Plugins -->
-    <link rel="stylesheet" href="css/plugins.css" />
-
-    <!-- Core Style Css -->
-    <link rel="stylesheet" href="css/style.css" />
-
     <?php wp_head();?>
 </head>
 
@@ -43,8 +20,8 @@
 
     <!-- ==================== Start Loading ==================== -->
 
-    <div id="preloader">
-    </div>
+    <!-- <div id="preloader">
+    </div> -->
 
     <!-- ==================== End Loading ==================== -->
 
