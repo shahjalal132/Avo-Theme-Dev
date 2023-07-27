@@ -5,6 +5,10 @@ if ( file_exists( dirname( __FILE__ ) . '/inc/enqueue.php' ) ) {
     require_once dirname( __FILE__ ) . '/inc/enqueue.php';
 }
 
+if ( file_exists( dirname( __FILE__ ) . '/inc/bs5-nav-walker.php' ) ) {
+    require_once dirname( __FILE__ ) . '/inc/bs5-nav-walker.php';
+}
+
 function avo_theme_functionality()
 {
     // Add Theme Support
@@ -15,6 +19,6 @@ function avo_theme_functionality()
     load_theme_textdomain( 'avo-translate', get_template_directory() . '/languages' );
 
     // Register Navigation Menu
-    register_nav_menu( 'primary-manu', __( 'Primary Menu', 'avo' ) );
+    register_nav_menu( 'primary-menu', __( 'Primary Menu', 'avo' ) );
 }
 add_action( 'after_setup_theme', 'avo_theme_functionality' );

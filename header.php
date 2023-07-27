@@ -63,7 +63,16 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <?php wp_nav_menu( array(
+                    'theme_location' => 'primary-menu',
+                    'container'      => false,
+                    'menu_class'     => '',
+                    'fallback_cb'    => '__return_false',
+                    'items_wrap'     => '<ul id="%1$s" class="navbar-nav ml-auto %2$s">%3$s</ul>',
+                    'depth'          => 3,
+                    'walker'         => new bootstrap_5_wp_nav_menu_walker(),
+                ) );?>
+                <!-- <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                             aria-haspopup="true" aria-expanded="false">Home</a>
@@ -101,7 +110,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                </ul>
+                </ul> -->
                 <div class="search">
                     <span class="icon pe-7s-search cursor-pointer"></span>
                     <div class="search-form text-center custom-font">
