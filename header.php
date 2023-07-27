@@ -53,7 +53,7 @@
 
             <!-- Logo -->
             <a class="logo" href="#">
-                <img src="img/logo-light.png" alt="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/logo-light.png" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -121,7 +121,7 @@
 
     <!-- ==================== Start Slider ==================== -->
 
-    <header class="freelancer sub-bg valign bg-img parallaxie" data-background="img/slid/freelancer.jpg"
+    <header class="freelancer sub-bg valign bg-img parallaxie" data-background="<?php echo get_template_directory_uri(); ?>/img/slid/freelancer.jpg"
         data-overlay-dark="4">
         <div class="container">
             <div class="row">

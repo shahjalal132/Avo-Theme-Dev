@@ -163,7 +163,7 @@
                 <div class="col-md-6 items graphic lg-mr wow fadeInUp" data-wow-delay=".4s">
                     <div class="item-img">
                         <a href="project-details.html" class="imago wow">
-                            <img src="img/portfolio/mas1/1.jpg" alt="image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/mas1/1.jpg" alt="image">
                             <div class="item-img-overlay"></div>
                         </a>
                     </div>
@@ -177,7 +177,7 @@
                 <div class="col-md-6 items web wow fadeInUp" data-wow-delay=".4s">
                     <div class="item-img">
                         <a href="project-details.html" class="imago wow">
-                            <img src="img/portfolio/mas1/2.jpg" alt="image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/mas1/2.jpg" alt="image">
                             <div class="item-img-overlay"></div>
                         </a>
                     </div>
@@ -191,7 +191,7 @@
                 <div class="col-md-6 items web wow fadeInUp" data-wow-delay=".4s">
                     <div class="item-img">
                         <a href="project-details.html" class="imago wow">
-                            <img src="img/portfolio/mas1/5.jpg" alt="image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/mas1/5.jpg" alt="image">
                             <div class="item-img-overlay"></div>
                         </a>
                     </div>
@@ -205,7 +205,7 @@
                 <div class="col-md-6 items web graphic wow fadeInUp" data-wow-delay=".4s">
                     <div class="item-img">
                         <a href="project-details.html" class="imago wow">
-                            <img src="img/portfolio/mas1/3.jpg" alt="image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/mas1/3.jpg" alt="image">
                             <div class="item-img-overlay"></div>
                         </a>
                     </div>
@@ -219,7 +219,7 @@
                 <div class="col-md-6 items brand wow fadeInUp" data-wow-delay=".4s">
                     <div class="item-img">
                         <a href="project-details.html" class="imago wow">
-                            <img src="img/portfolio/mas1/4.jpg" alt="image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/mas1/4.jpg" alt="image">
                             <div class="item-img-overlay"></div>
                         </a>
                     </div>
@@ -233,7 +233,7 @@
                 <div class="col-md-6 items brand wow fadeInUp" data-wow-delay=".4s">
                     <div class="item-img">
                         <a href="project-details.html" class="imago wow">
-                            <img src="img/portfolio/mas1/6.jpg" alt="image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/mas1/6.jpg" alt="image">
                             <div class="item-img-overlay"></div>
                         </a>
                     </div>
@@ -255,7 +255,7 @@
 
 <!-- ==================== Start testimonials ==================== -->
 
-<section class="testimonials section-padding sub-bg lftstl bg-img parallaxie" data-background="img/slid/3.jpg"
+<section class="testimonials section-padding sub-bg lftstl bg-img parallaxie" data-background="<?php echo get_template_directory_uri(); ?>/img/slid/3.jpg"
     data-overlay-dark="9">
     <div class="container position-re">
         <div class="sec-head custom-font text-center">
@@ -275,7 +275,7 @@
                                 <div class="author">
                                     <div class="lxleft">
                                         <div class="img">
-                                            <img src="img/clients/1.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/clients/1.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="fxright">
@@ -295,7 +295,7 @@
                                 <div class="author">
                                     <div class="lxleft">
                                         <div class="img">
-                                            <img src="img/clients/2.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/clients/2.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="fxright">
@@ -315,7 +315,7 @@
                                 <div class="author">
                                     <div class="lxleft">
                                         <div class="img">
-                                            <img src="img/clients/3.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/clients/3.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="fxright">
@@ -358,7 +358,7 @@
             <div class="col-lg-4">
                 <div class="item list md-mb50 wow fadeInUp" data-wow-delay=".3s">
                     <div class="img">
-                        <img src="img/blog/1.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/blog/1.jpg" alt="">
                     </div>
                     <div class="cont">
                         <a href="#0" class="date custom-font">
@@ -385,7 +385,7 @@
             <div class="col-lg-4">
                 <div class="item list md-mb50 wow fadeInUp" data-wow-delay=".5s">
                     <div class="img">
-                        <img src="img/blog/2.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/blog/2.jpg" alt="">
                     </div>
                     <div class="cont">
                         <a href="#0" class="date custom-font">
@@ -412,7 +412,7 @@
             <div class="col-lg-4">
                 <div class="item list wow fadeInUp" data-wow-delay=".8s">
                     <div class="img">
-                        <img src="img/blog/3.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/blog/3.jpg" alt="">
                     </div>
                     <div class="cont">
                         <a href="#0" class="date custom-font">
@@ -452,7 +452,7 @@
             <div class="brands">
                 <div class="item" data-wow-delay=".3s">
                     <div class="img">
-                        <img src="img/clients/brands/01.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/clients/brands/01.png" alt="">
                     </div>
                     <a href="#0" class="link" data-splitting>www.avo.com</a>
                 </div>
@@ -460,7 +460,7 @@
             <div class="brands">
                 <div class="item" data-wow-delay=".6s">
                     <div class="img">
-                        <img src="img/clients/brands/02.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/clients/brands/02.png" alt="">
                     </div>
                     <a href="#0" class="link" data-splitting>www.avo.com</a>
                 </div>
@@ -468,7 +468,7 @@
             <div class="brands">
                 <div class="item" data-wow-delay=".8s">
                     <div class="img">
-                        <img src="img/clients/brands/03.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/clients/brands/03.png" alt="">
                     </div>
                     <a href="#0" class="link" data-splitting>www.avo.com</a>
                 </div>
@@ -476,7 +476,7 @@
             <div class="brands">
                 <div class="item" data-wow-delay=".3s">
                     <div class="img">
-                        <img src="img/clients/brands/04.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/clients/brands/04.png" alt="">
                     </div>
                     <a href="#0" class="link" data-splitting>www.avo.com</a>
                 </div>
@@ -484,7 +484,7 @@
             <div class="brands">
                 <div class="item" data-wow-delay=".4s">
                     <div class="img">
-                        <img src="img/clients/brands/05.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/clients/brands/05.png" alt="">
                     </div>
                     <a href="#0" class="link" data-splitting>www.avo.com</a>
                 </div>
@@ -492,7 +492,7 @@
             <div class="brands">
                 <div class="item" data-wow-delay=".7s">
                     <div class="img">
-                        <img src="img/clients/brands/06.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/clients/brands/06.png" alt="">
                     </div>
                     <a href="#0" class="link" data-splitting>www.avo.com</a>
                 </div>
@@ -500,7 +500,7 @@
             <div class="brands">
                 <div class="item" data-wow-delay=".5s">
                     <div class="img">
-                        <img src="img/clients/brands/07.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/clients/brands/07.png" alt="">
                     </div>
                     <a href="#0" class="link" data-splitting>www.avo.com</a>
                 </div>
@@ -508,7 +508,7 @@
             <div class="brands">
                 <div class="item" data-wow-delay=".3s">
                     <div class="img">
-                        <img src="img/clients/brands/08.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/clients/brands/08.png" alt="">
                     </div>
                     <a href="#0" class="link" data-splitting>www.avo.com</a>
                 </div>
