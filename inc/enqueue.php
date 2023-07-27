@@ -15,5 +15,10 @@ function enqueue_css_js_fonts()
 
     // Enqueue Custom CSS File
     wp_enqueue_style( 'jalal-custom', get_template_directory_uri() . '/css/style.css' );
+
+    // Enqueue JS and jQuery Files
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'plugins', get_template_directory_uri() . '/js/plugins.js', array( 'jquery' ), true );
+    wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_css_js_fonts' );
