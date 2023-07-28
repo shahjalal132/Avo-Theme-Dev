@@ -52,7 +52,7 @@
         <div class="container">
 
             <!-- Logo -->
-            <a class="logo" href="#">
+            <a class="logo" href="<?php echo home_url(); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo-light.png" alt="logo">
             </a>
 
