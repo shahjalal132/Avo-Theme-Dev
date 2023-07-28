@@ -26,9 +26,3 @@ function avo_theme_functionality()
     register_nav_menu( 'primary-menu', __( 'Primary Menu', 'avo' ) );
 }
 add_action( 'after_setup_theme', 'avo_theme_functionality' );
-
-function Custom_sho_fun()
-{
-    return '<h2>Hello This is Shortcode</h2>';
-}
-add_shortcode( 'shahjalal', 'Custom_sho_fun' );
