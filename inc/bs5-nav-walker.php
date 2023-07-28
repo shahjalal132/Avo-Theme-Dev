@@ -27,7 +27,7 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
       }
     }
     $indent = str_repeat("\t", $depth);
-    $submenu = ($depth > 0) ? ' sub-menu' : '';
+    $submenu = ($depth > 0) ? ' show' : '';
     $output .= "\n$indent<ul class=\"dropdown-menu$submenu " . esc_attr(implode(" ",$dropdown_menu_class)) . " depth_$depth\">\n";
   }
 
@@ -50,7 +50,8 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
     }
 
     $class_names =  join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
-    $class_names = ' class="' . esc_attr($class_names) . '"';
+    $class_name = 'nav-item';
+    $class_names = ' class="' . esc_attr($class_names) . $class_name . '"';
 
     $id = apply_filters('nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args);
     $id = strlen($id) ? ' id="' . esc_attr($id) . '"' : '';
@@ -64,7 +65,7 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 
     $active_class = ($item->current || $item->current_item_ancestor || in_array("current_page_parent", $item->classes, true) || in_array("current-post-ancestor", $item->classes, true)) ? 'active' : '';
     $nav_link_class = ( $depth > 0 ) ? 'dropdown-item ' : 'nav-link ';
-    $attributes .= ( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';
+    $attributes .= ( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"' : ' class="'. $nav_link_class . $active_class . '"';
 
     $item_output = $args->before;
     $item_output .= '<a' . $attributes . '>';
@@ -74,6 +75,45 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 
     $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
   }
+
+  public function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
+		if ( ! $element ) {
+			return;
+		}
+
+		$id_field = $this->db_fields['id'];
+		$id       = $element->$id_field;
+
+		// Display this element.
+		$this->has_children = ! empty( $children_elements[ $id ] );
+		if ( isset( $args[0] ) && is_array( $args[0] ) ) {
+			$args[0]['has_children'] = $this->has_children; // Back-compat.
+		}
+
+		$this->start_el( $output, $element, $depth, ...array_values( $args ) );
+
+		// Descend only when the depth is right and there are children for this element.
+		if ( ( 0 == $max_depth || $max_depth > $depth + 1 ) && isset( $children_elements[ $id ] ) ) {
+
+			foreach ( $children_elements[ $id ] as $child ) {
+
+				if ( ! isset( $newlevel ) ) {
+					$newlevel = true;
+					// Start the child delimiter.
+					$this->start_lvl( $output, $depth, ...array_values( $args ) );
+				}
+				$this->display_element( $child, $children_elements, $max_depth, $depth + 1, $args, $output );
+			}
+			unset( $children_elements[ $id ] );
+		}
+
+		if ( isset( $newlevel ) && $newlevel ) {
+			// End the child delimiter.
+			$this->end_lvl( $output, $depth, ...array_values( $args ) );
+		}
+
+		// End this element.
+		$this->end_el( $output, $element, $depth, ...array_values( $args ) );
+	}
 }
-// register a new menu
-register_nav_menu('main-menu', 'Main menu');
+
