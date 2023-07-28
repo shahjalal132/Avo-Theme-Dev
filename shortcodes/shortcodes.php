@@ -14,6 +14,7 @@ function slider_shortcode_function( $attr )
         'twitter'    => '#',
         'pinterest'  => '#',
         'behance'    => '#',
+        'bg_img'     => get_template_directory_uri() . "/img/slid/freelancer.jpg",
     ), $attr );
 
     extract( $attributes );
@@ -23,7 +24,7 @@ function slider_shortcode_function( $attr )
 <!-- ==================== Start Slider ==================== -->
 
 <div class="freelancer sub-bg valign bg-img parallaxie"
-    data-background="<?php echo get_template_directory_uri(); ?>/img/slid/freelancer.jpg" data-overlay-dark="4">
+    data-background="<?php echo $bg_img; ?>" data-overlay-dark="4">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
