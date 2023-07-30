@@ -15,3 +15,11 @@ if ( file_exists( dirname( __FILE__ ) . '/services-shortcode.php' ) ) {
 if ( file_exists( dirname( __FILE__ ) . '/counterup-shortcode.php' ) ) {
     require_once dirname( __FILE__ ) . '/counterup-shortcode.php';
 }
+
+if ( file_exists( dirname( __FILE__ ) . '/portfolio-shortcode.php' ) ) {
+    require_once dirname( __FILE__ ) . '/portfolio-shortcode.php';
+}
+
+if ( file_exists( dirname( __FILE__ ) . '/testimonial-section.php' ) ) {
+    require_once dirname( __FILE__ ) . '/testimonial-section.php';
+}

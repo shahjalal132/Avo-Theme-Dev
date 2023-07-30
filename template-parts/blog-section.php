@@ -8,6 +8,7 @@
             <span class="tbg">Blogs</span>
         </div>
         <div class="row">
+
             <div class="col-lg-4">
                 <div class="item list md-mb50 wow fadeInUp" data-wow-delay=".3s">
                     <div class="img">
@@ -35,6 +36,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-lg-4">
                 <div class="item list md-mb50 wow fadeInUp" data-wow-delay=".5s">
                     <div class="img">
@@ -89,6 +91,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
