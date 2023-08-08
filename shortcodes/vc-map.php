@@ -195,3 +195,121 @@ function vc_map_integration_for_service2()
 
 ?>
 <!-- ========== End Services Shortcode integration ========== -->
+
+<!-- ========== Start Counter Up Shortcode Integration ========== -->
+<?php
+// VC_Map Integration for counter
+add_action( 'vc_before_init', 'vc_map_integration_for_counter' );
+function vc_map_integration_for_counter()
+{
+    vc_map( array(
+        'name'     => __( 'Avo Counter', 'avo' ),
+        'base'     => 'counter-up',
+        'category' => __( 'Avo', 'avo' ),
+        'icon'     => '',
+        'params'   => array(
+            array(
+                'param_name'  => 'count1',
+                'type'        => 'textfield',
+                'description' => __( 'Add Counter 1 Number', 'avo' ),
+                'heading'     => __( 'Counter 1 Number' ),
+                'value'       => __( '2500', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'count1_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Counter Up 1 Name', 'avo' ),
+                'heading'     => __( 'Counter 1 Name' ),
+                'value'       => __( 'Happy Clients', 'avo' ),
+            ),
+            array(
+                "type"       => "iconpicker",
+                "heading"    => "Counter 1 Icon",
+                "param_name" => "count1_icon",
+                "value"      => "fa-solid fa-user",
+                "settings"   => array(
+                    "emptyIcon"    => true,
+                    "iconsPerPage" => 100,
+                ) ),
+            array(
+                'param_name'  => 'count2',
+                'type'        => 'textfield',
+                'description' => __( 'Add Counter 2 Number', 'avo' ),
+                'heading'     => __( 'Counter 2 Number' ),
+                'value'       => __( '150', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'count2_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Counter Up 2 Name', 'avo' ),
+                'heading'     => __( 'Counter 2 Name' ),
+                'value'       => __( 'Complete Projects', 'avo' ),
+            ),
+            array(
+                "type"       => "iconpicker",
+                "heading"    => "Counter 2 Icon",
+                "param_name" => "count2_icon",
+                "value"      => "fa-solid fa-user",
+                "settings"   => array(
+                    "emptyIcon"    => true,
+                    "iconsPerPage" => 100,
+                ) ),
+            array(
+                'param_name'  => 'count3',
+                'type'        => 'textfield',
+                'description' => __( 'Add Counter 3 Number', 'avo' ),
+                'heading'     => __( 'Counter 3 Number' ),
+                'value'       => __( '255', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'count3_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Counter Up 3 Name', 'avo' ),
+                'heading'     => __( 'Counter 3 Name' ),
+                'value'       => __( 'Files Downloaded', 'avo' ),
+            ),
+            array(
+                "type"       => "iconpicker",
+                "heading"    => "Counter 3 Icon",
+                "param_name" => "count3_icon",
+                "value"      => "fa-solid fa-user",
+                "settings"   => array(
+                    "emptyIcon"    => true,
+                    "iconsPerPage" => 100,
+                ) ),
+            array(
+                'param_name'  => 'count3_sub_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Counter Up 3 Sub text', 'avo' ),
+                'heading'     => __( 'Counter 3 sub number' ),
+                'value'       => __( 'k', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'count4',
+                'type'        => 'textfield',
+                'description' => __( 'Add Counter 4 Number', 'avo' ),
+                'heading'     => __( 'Counter 4 Number' ),
+                'value'       => __( '60', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'count4_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Counter Up 4 Name', 'avo' ),
+                'heading'     => __( 'Counter 4 Name' ),
+                'value'       => __( 'Award win', 'avo' ),
+            ),
+            array(
+                "type"       => "iconpicker",
+                "heading"    => "Counter 4 Icon",
+                "param_name" => "count4_icon",
+                "value"      => "fa-solid fa-user",
+                "settings"   => array(
+                    "emptyIcon"    => true,
+                    "iconsPerPage" => 100,
+                ) ),
+        ),
+    ) );
+}
+
+?>
+<!-- ========== End Counter Up Shortcode Integration ========== -->

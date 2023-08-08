@@ -13,6 +13,9 @@ function enqueue_css_js_fonts()
     // Enqueue Plugins CSS File
     wp_enqueue_style( 'plugins', get_template_directory_uri() . '/css/plugins.css' );
 
+    // Enqueue Plugins CSS File
+    wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
     // Enqueue Custom CSS File
     wp_enqueue_style( 'jalal-custom', get_template_directory_uri() . '/css/style.css' );
 
