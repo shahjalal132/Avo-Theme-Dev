@@ -37,7 +37,7 @@ function custom_post_type_for_services()
         'label'               => __( 'Service', 'avo' ),
         'description'         => __( 'Services', 'avo' ),
         'labels'              => $labels,
-        'supports'            => array( 'title', 'editor', 'thumbnail' ),
+        'supports'            => array( 'title' ),
         'hierarchical'        => false,
         'public'              => true,
         'show_ui'             => true,
@@ -91,4 +91,4 @@ function custom_post_type_for_services()
 
 }
 
-add_action( 'init', 'custom_post_type_for_services', 0 );
+add_action( 'init', 'custom_post_type_for_services' );

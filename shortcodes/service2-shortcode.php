@@ -1,11 +1,27 @@
-<!-- ==================== Start Services ==================== -->
+<!-- ========== Start Service Shortcode ========== -->
+<?php
+
+// Shortcode for services
+function services_shortcode_function( $attr )
+{
+    ob_start();
+
+    $attr_for_services = shortcode_atts( array(
+        'subtitle' => 'Best Featured',
+        'title' => 'Services',
+    ), $attr );
+
+    extract( $attr_for_services );
+    ?>
+
+    <!-- ==================== Start Services ==================== -->
 
 <section class="services">
     <div class="container">
         <div class="sec-head custom-font text-center">
-            <h6 class="wow fadeIn" data-wow-delay=".5s">Best Featured</h6>
-            <h3 class="wow" data-splitting>Services</h3>
-            <span class="tbg">Services</span>
+            <h6 class="wow fadeIn" data-wow-delay=".5s"><?php echo $subtitle; ?></h6>
+            <h3 class="wow" data-splitting><?php echo $title; ?></h3>
+            <span class="tbg"><?php echo $title; ?></span>
         </div>
         <div class="row">
 
@@ -34,3 +50,10 @@
 </section>
 
 <!-- ==================== End Services ==================== -->
+
+    <?php return ob_get_clean();
+}
+add_shortcode( 'services2', 'services_shortcode_function' );
+
+?>
+<!-- ========== End Service Shortcode ========== -->

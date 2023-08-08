@@ -162,3 +162,36 @@ function vc_map_integration_for_about()
 
 ?>
 <!-- ========== End About Shortcode Integration ========== -->
+
+<!-- ========== Start Services Shortcode integration ========== -->
+<?php
+// VC_Map Integration
+add_action( 'vc_before_init', 'vc_map_integration_for_service2' );
+function vc_map_integration_for_service2()
+{
+    vc_map( array(
+        'name'     => __( 'Avo Service', 'avo' ),
+        'base'     => 'services2',
+        'category' => __( 'Avo', 'avo' ),
+        'icon'     => '',
+        'params'   => array(
+            array(
+                'param_name'  => 'subtitle',
+                'type'        => 'textfield',
+                'description' => __( 'Subtitle here', 'avo' ),
+                'heading'     => __( 'Subtitle' ),
+                'value'       => __( 'Best Featured', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'title',
+                'type'        => 'textfield',
+                'description' => __( 'Title here', 'avo' ),
+                'heading'     => __( 'Title' ),
+                'value'       => __( 'Services', 'avo' ),
+            ),
+        ),
+    ) );
+}
+
+?>
+<!-- ========== End Services Shortcode integration ========== -->

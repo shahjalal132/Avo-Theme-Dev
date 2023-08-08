@@ -24,6 +24,10 @@ if ( file_exists( dirname( __FILE__ ) . '/testimonial-section.php' ) ) {
     require_once dirname( __FILE__ ) . '/testimonial-section.php';
 }
 
+if ( file_exists( dirname( __FILE__ ) . '/service2-shortcode.php' ) ) {
+    require_once dirname( __FILE__ ) . '/service2-shortcode.php';
+}
+
 if ( file_exists( dirname( __FILE__ ) . '/vc-map.php' ) ) {
     require_once dirname( __FILE__ ) . '/vc-map.php';
 }
