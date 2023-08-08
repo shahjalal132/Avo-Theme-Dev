@@ -1,3 +1,4 @@
+<!-- ========== Start Slider Shortcode Integration ========== -->
 <?php
 
 add_action( 'vc_before_init', 'shortcode_integration_for_avo_theme' );
@@ -68,3 +69,96 @@ function shortcode_integration_for_avo_theme()
         ),
     ) );
 }
+
+?>
+
+<!-- ========== End Slider Shortcode Integration ========== -->
+
+<!-- ========== Start About Shortcode Integration ========== -->
+<?php
+
+add_action( 'vc_before_init', 'vc_map_integration_for_about' );
+function vc_map_integration_for_about()
+{
+    vc_map( array(
+        'name'     => __( 'Avo About', 'avo' ),
+        'base'     => 'about',
+        'category' => __( 'Avo', 'avo' ),
+        'icon'     => '',
+        'params'   => array(
+            array(
+                'param_name'  => 'about_me_text',
+                'type'        => 'textfield',
+                'description' => __( 'Enter about me text', 'avo' ),
+                'heading'     => __( 'About Me' ),
+                'value'       => __( 'About Me', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'main_title',
+                'type'        => 'textfield',
+                'description' => __( 'Enter main title', 'avo' ),
+                'heading'     => __( 'Title' ),
+                'value'       => __( 'My mission is design develop the best Websites around.', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'download_cv',
+                'type'        => 'textfield',
+                'description' => __( 'Download CV', 'avo' ),
+                'heading'     => __( 'Download CV' ),
+                'value'       => __( 'Download C.V', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'download_cv_link',
+                'type'        => 'textfield',
+                'description' => __( 'Download CV Link', 'avo' ),
+                'heading'     => __( 'Download CV Link' ),
+                'value'       => __( '#', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'skill1',
+                'type'        => 'textfield',
+                'description' => __( 'Enter Skill', 'avo' ),
+                'heading'     => __( 'Skill' ),
+                'value'       => __( 'UI / UX Design', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'skill1_progress',
+                'type'        => 'textfield',
+                'description' => __( 'Enter Skill Progress', 'avo' ),
+                'heading'     => __( 'Skill Progress' ),
+                'value'       => __( '80%', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'skill2',
+                'type'        => 'textfield',
+                'description' => __( 'Enter Skill', 'avo' ),
+                'heading'     => __( 'Skill' ),
+                'value'       => __( 'Development', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'skill2_progress',
+                'type'        => 'textfield',
+                'description' => __( 'Enter Skill Progress', 'avo' ),
+                'heading'     => __( 'Skill Progress' ),
+                'value'       => __( '90%', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'skill3',
+                'type'        => 'textfield',
+                'description' => __( 'Enter Skill', 'avo' ),
+                'heading'     => __( 'Skill' ),
+                'value'       => __( 'Graphic Design', 'avo' ),
+            ),
+            array(
+                'param_name'  => 'skill3_progress',
+                'type'        => 'textfield',
+                'description' => __( 'Enter Skill Progress', 'avo' ),
+                'heading'     => __( 'Skill Progress' ),
+                'value'       => __( '85%', 'avo' ),
+            ),
+        ),
+    ) );
+}
+
+?>
+<!-- ========== End About Shortcode Integration ========== -->

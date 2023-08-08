@@ -13,6 +13,10 @@ if ( file_exists( dirname( __FILE__ ) . '/shortcodes/shortcodes.php' ) ) {
     require_once dirname( __FILE__ ) . '/shortcodes/shortcodes.php';
 }
 
+if ( file_exists( dirname( __FILE__ ) . '/inc/custom-post-type.php' ) ) {
+    require_once dirname( __FILE__ ) . '/inc/custom-post-type.php';
+}
+
 function avo_theme_functionality()
 {
     // Add Theme Support
