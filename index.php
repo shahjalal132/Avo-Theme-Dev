@@ -1,13 +1,17 @@
 <?php get_header(); ?>
 
 <!-- ==================== Start Blog ==================== -->
+<?php
+    $post_id = 26;
+    $title = get_the_title($post_id);
+?>
 
 <section class="blog-grid section-padding">
     <div class="container">
         <div class="sec-head custom-font text-center">
             <h6 class="fadeIn" data-wow-delay=".5s">Latest News</h6>
-            <h3 class="wow" data-splitting>Our Blogs.</h3>
-            <span class="tbg">Blogs</span>
+            <h3 class="wow" data-splitting><?php echo $title; ?></h3>
+            <span class="tbg"><?php echo $title; ?></span>
         </div>
         <div class="row">
 
