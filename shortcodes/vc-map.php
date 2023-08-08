@@ -1,6 +1,6 @@
 <!-- ========== Start Slider Shortcode Integration ========== -->
 <?php
-
+// VC_Map Integration for slider shortcode
 add_action( 'vc_before_init', 'shortcode_integration_for_avo_theme' );
 
 function shortcode_integration_for_avo_theme()
@@ -76,7 +76,7 @@ function shortcode_integration_for_avo_theme()
 
 <!-- ========== Start About Shortcode Integration ========== -->
 <?php
-
+// VC_Map Integration for about shortcode
 add_action( 'vc_before_init', 'vc_map_integration_for_about' );
 function vc_map_integration_for_about()
 {
@@ -165,7 +165,7 @@ function vc_map_integration_for_about()
 
 <!-- ========== Start Services Shortcode integration ========== -->
 <?php
-// VC_Map Integration
+// VC_Map Integration for service shortcode
 add_action( 'vc_before_init', 'vc_map_integration_for_service2' );
 function vc_map_integration_for_service2()
 {
