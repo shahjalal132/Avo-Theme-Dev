@@ -23,3 +23,7 @@ if ( file_exists( dirname( __FILE__ ) . '/portfolio-shortcode.php' ) ) {
 if ( file_exists( dirname( __FILE__ ) . '/testimonial-section.php' ) ) {
     require_once dirname( __FILE__ ) . '/testimonial-section.php';
 }
+
+if ( file_exists( dirname( __FILE__ ) . '/vc-map.php' ) ) {
+    require_once dirname( __FILE__ ) . '/vc-map.php';
+}
