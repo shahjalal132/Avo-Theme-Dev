@@ -313,3 +313,175 @@ function vc_map_integration_for_counter()
 
 ?>
 <!-- ========== End Counter Up Shortcode Integration ========== -->
+
+<!-- ========== Start Brands shortcode Integration ========== -->
+<?php
+// VC_Map Integration for Brands
+add_action( 'vc_before_init', 'vc_map_integration_for_brands' );
+function vc_map_integration_for_brands()
+{
+    vc_map( array(
+        'name'     => __( 'Avo Brands', 'avo' ),
+        'base'     => 'brands',
+        'category' => __( 'Avo', 'avo' ),
+        'icon'     => '',
+        'params'   => array(
+            array(
+                'param_name'  => 'brand1_img',
+                'type'        => 'attach_image',
+                'description' => __( 'Add Brand1 Image', 'avo' ),
+                'heading'     => __( 'Brand1 Image' ),
+            ),
+            array(
+                'param_name'  => 'brand1_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand1 text', 'avo' ),
+                'heading'     => __( 'Brand1 text' ),
+                'value'       => ' Item1',
+            ),
+            array(
+                'param_name'  => 'brand1_link',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand1  Link', 'avo' ),
+                'heading'     => __( ' Brand1 Link' ),
+                'value'       => '#',
+            ),
+            array(
+                'param_name'  => 'brand2_img',
+                'type'        => 'attach_image',
+                'description' => __( 'Add Brand2  Image', 'avo' ),
+                'heading'     => __( ' Brand2 Image' ),
+            ),
+            array(
+                'param_name'  => 'brand2_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand2  text', 'avo' ),
+                'heading'     => __( ' Brand2 text' ),
+            ),
+            array(
+                'param_name'  => 'brand2_link',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand2  Link', 'avo' ),
+                'heading'     => __( ' Brand2 Link' ),
+                'value'       => '#',
+            ),
+            array(
+                'param_name'  => 'brand3_img',
+                'type'        => 'attach_image',
+                'description' => __( 'Add Brand3 Image', 'avo' ),
+                'heading'     => __( 'Brand3 Image' ),
+            ),
+            array(
+                'param_name'  => 'brand3_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand3 text', 'avo' ),
+                'heading'     => __( 'Brand3 text' ),
+            ),
+            array(
+                'param_name'  => 'brand3_link',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand3 Link', 'avo' ),
+                'heading'     => __( 'Brand3 Link' ),
+                'value'       => '#',
+            ),
+            array(
+                'param_name'  => 'brand4_img',
+                'type'        => 'attach_image',
+                'description' => __( 'Add Brand4 Image', 'avo' ),
+                'heading'     => __( 'Brand4 Image' ),
+            ),
+            array(
+                'param_name'  => 'brand4_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand4 text', 'avo' ),
+                'heading'     => __( 'Brand4 text' ),
+            ),
+            array(
+                'param_name'  => 'brand4_link',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand4 Link', 'avo' ),
+                'heading'     => __( 'Brand4 Link' ),
+                'value'       => '#',
+            ),
+            array(
+                'param_name'  => 'brand5_img',
+                'type'        => 'attach_image',
+                'description' => __( 'Add Brand5 Image', 'avo' ),
+                'heading'     => __( 'Brand5 Image' ),
+            ),
+            array(
+                'param_name'  => 'brand5_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand5 text', 'avo' ),
+                'heading'     => __( 'Brand5 text' ),
+            ),
+            array(
+                'param_name'  => 'brand5_link',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand5 Link', 'avo' ),
+                'heading'     => __( 'Brand5 Link' ),
+                'value'       => '#',
+            ),
+            array(
+                'param_name'  => 'brand6_img',
+                'type'        => 'attach_image',
+                'description' => __( 'Add Brand6 Image', 'avo' ),
+                'heading'     => __( 'Brand6 Image' ),
+            ),
+            array(
+                'param_name'  => 'brand6_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand6 text', 'avo' ),
+                'heading'     => __( 'Brand6 text' ),
+            ),
+            array(
+                'param_name'  => 'brand6_link',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand6 Link', 'avo' ),
+                'heading'     => __( 'Brand6 Link' ),
+                'value'       => '#',
+            ),
+            array(
+                'param_name'  => 'brand7_img',
+                'type'        => 'attach_image',
+                'description' => __( 'Add Brand7 Image', 'avo' ),
+                'heading'     => __( 'Brand7 Image' ),
+            ),
+            array(
+                'param_name'  => 'brand7_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand7 text', 'avo' ),
+                'heading'     => __( 'Brand7 text' ),
+            ),
+            array(
+                'param_name'  => 'brand7_link',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand7 Link', 'avo' ),
+                'heading'     => __( 'Brand7 Link' ),
+                'value'       => '#',
+            ),
+            array(
+                'param_name'  => 'brand8_img',
+                'type'        => 'attach_image',
+                'description' => __( 'Add Brand8 Image', 'avo' ),
+                'heading'     => __( 'Brand8 Image' ),
+            ),
+            array(
+                'param_name'  => 'brand8_text',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand8 text', 'avo' ),
+                'heading'     => __( 'Brand8 text' ),
+            ),
+            array(
+                'param_name'  => 'brand8_link',
+                'type'        => 'textfield',
+                'description' => __( 'Add Brand8 Link', 'avo' ),
+                'heading'     => __( 'Brand8 Link' ),
+                'value'       => '#',
+            ),
+        ),
+    ) );
+}
+
+?>
+<!-- ========== End Brands shortcode Integration ========== -->
